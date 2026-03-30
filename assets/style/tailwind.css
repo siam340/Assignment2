@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 
 /* styles */
@@ -9,3 +10,131 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+/* animation btn */
+@-webkit-keyframes buttonSpin{
+  from{-webkit-transform: translate(-50%,50%) rotate(0deg); transform: translate(-50%, -50%) rotate(0deg);}
+  to{-webkit-transform: translate(-50% ,50%) rotate(360deg); transform: translate(-50%, -50%) rotate(300deg);}
+
+}
+
+@keyframes buttonSpin {
+  from {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animation-btn{
+ 
+  background: transparent;
+  color: #00FF88 !important;
+  border-radius: 9999px;
+   position: relative;
+  z-index: 1;
+  border: none !important;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  -webkit-isolation: isolate;
+  isolation: isolate;
+}
+.animation-btn::before{
+  content: '';
+  position: absolute;
+  height: 502%;
+   z-index: -2;
+  left: 50%;
+  top: 50%;
+  width: 498%;
+  background: -webkit-conic-gradient(
+    from 0deg at 50% 50%,
+    #f7e93f 0%, 
+    #9100f8 100%
+     #2d00f8 23%, 
+    #fb09b4 52%,
+    #f7e93f 74,
+  );
+  background: conic-gradient(from 0deg at 50% 50%,#fb09b4, #9100f8 100% );
+  animation: buttonSpin 2s linear infinite;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50% );
+  -webkit-animation: buttonSpin 4s linear infinite;
+}
+.animation-btn::after{
+  
+  position: absolute;
+  z-index: -1;
+  left: 2px;
+  border-radius: 9998px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+ background: #11071F;
+}
+@keyframes spin{
+  
+  to{transform: rotate(360deg);}
+  from{transform: rotate(0deg);}
+}
+.animation{
+  animation: spin 5s linear infinite;
+}
+
+.blending-color{
+background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.blending-btn {
+  border-radius: 100px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+}
+.blending-bg{
+    background: linear-gradient(to top right, #f7e93f, #fb09b4, #9100f8);
+    
+}
+/* text- opacity*/
+.opaque{
+  opacity: 0.8;
+
+}
+/* header style */
+.banner-bg-img{
+    background-image: url('../assets/hero-bg.png') h-[100vh] bg-cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-position:center center;
+    
+    
+}
+/* hero-section */
+.hero-section .img1{
+width: 350px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+
+
+
+/* choose techWave styles */
+.choose-card{
+  padding: 40px;
+  background-color:#351165 ;
+  border-radius: 20px;
+}
+  h2{
+ font-size: 24px;
+ font-weight: 700;
+}
+
+

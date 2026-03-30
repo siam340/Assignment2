@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-them="[#1A0B2E]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming-assignment-2</title>
+    <!-- Taildwids link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CDNJS LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS link -->
+   <link rel="stylesheet" href="/assets/style/tailwind.css">
+  </head>
+  <body>
+    <header class="">
+      <!-- nav section -->
+      <nav
+        class="w-[94%] mx-auto md:w-[74%] flex items-center justify-between mt-4 mb-4"
+      >
+        <div class="font-bold text-3xl md:text-4xl lg:text-5xl">
+          <span>Tech</span><span class="gradient-color">Wave</span>
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex gap-8">
+            <a class="animation-btn py-1 px-3" href="#about"><li>About</li></a>
+            <a class="animation-btn py-1 px-3" href="#episodes"
+              ><li>Episodes</li></a
+            >
+            <a class="animation-btn py-1 px-3" href="#host"><li>Host</li></a>
+          </ul>
+        </div>
+        <button class="hidden gradient-btn md:block">
+          Subscribe <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+
+        <div class="md:hidden">
+          <div class="animation-btn p-2">
+            <img w-[100%] src="./assets/hamburger-menu.png" alt="menu" />
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <div
+        class="relative banner-bg-img bor justify-center mt-16 mb-3 md:mt-0 lg:min-h-[800px] flex items-center"
+      >
+        <div
+          class="md:py-11 text-center gap-6 w-[96%] mx-auto md:w-[71%] flex flex-col items-center justify-center"
+        >
+          <p
+            class=" bg-[#00FF88] py-1 px-3 lg:py-2 lg:px-5 text-black rounded-full font-bold text-[14px] lg:text-[19px] absolute z-10 right-[20%] top-[0%] md:right-[40%] md:top-[7%] lg:right-[41%] lg:top-[17%] shadow-[0_0_15px_#00FF88]"
+          >
+            NEW
+          </p>
+          <div
+            class="animation relative bottom-5 flex items-center justify-center"
+          >
+            <img
+              class="w-[169px] h-[169px] md:w-[200px] md:h-[200px] lg:w-[412px] lg:h-[411px]"
+              src="./assets/hero-circle.png"
+              alt=""
+            />
+            <img
+              class="w-[60px] h-[91px] md:w-[69px] md:h-[119px] lg:w-[169px] lg:h-[271px] absolute"
+              src="./assets/microphone.png"
+              alt=""
+            />
+          </div>
+
+          <div class="flex flex-col gap-6 bottom-12">
+            <div>
+              <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold">
+                TeachWave
+              </h1>
+              <p class="opacity text-sm md:text-lg">
+                Your daily dose of tech insights, productivity hacks, and
+                personal growth
+              </p>
+            </div>
+            <!-- banner buttons -->
+            <div class="flex gap-1 md:gap-2 justify-center items-center">
+              <button
+                class="gradient-bg p-1 px-2 rounded-full md:py-3 md:px-4 cursor-pointer"
+              >
+                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+              </button>
+              <button
+                class="animation-btn font-semibold text-[#00FF88] p-1 px-2 md:py-3 md:px-4 rounded-full cursor-pointer"
+              >
+                <i class="fa-regular fa-envelope"></i> Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+
+  </body>
+
+</html>

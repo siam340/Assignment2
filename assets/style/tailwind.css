@@ -122,19 +122,27 @@ width: 350px;
 max-width: 1200px;
 margin: 0 auto;
 }
-
-
-
-
-/* choose techWave styles */
-.choose-card{
-  padding: 40px;
-  background-color:#351165 ;
-  border-radius: 20px;
+footer{
+  background-image: url('//assets/footer-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position:center center;
+    width: 100%;
+    position: relative;
+    background-color: #1a0b2e;
 }
-  h2{
- font-size: 24px;
- font-weight: 700;
+@media (max-width: 768px) {
+  .banner-bg-img {
+    background-size:contain; 
+    background-position: center top; 
+    
+  }
 }
+
+
+
+
+
 
 
